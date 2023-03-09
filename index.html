@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="./media/swooshes.png">
+
+    <title>SwooshSwitcher</title>
+
+    <!-- css -->
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- vendor/modernizer
+    <link href="./js/vendor/modernizr/modernizr-custom-es6.css" rel="stylesheet" type="css" />
+    <script src="./js/vendor/modernizr/modernizr-custom-es6.js"></script>
+
+     core-js polyfilling -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/core-js-bundle@3.27.2/minified.min.js"></script> -->
+
+    <!-- Load the JavaScript file as a module. JavaScript modules are deferred by default -->
+    <script src="./js/app.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="mt-3 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./media/swoosh-header.png" class="h-12 w-12 mr-3 rounded-full" alt="Flowbite Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-indigo-600">SwooshSwitcher</span>
+            </a>
+            <div class="flex md:order-2">
+                <a type="button" href="#form"
+                    class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">Customize</a>
+
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header media images -->
+    <div class="flex mb-20">
+        <img src="./media/leather_green_pink.jpeg" width="20%">
+        <img src="./media/canvas_black_orange.jpeg" width="20%">
+        <img src="./media/canvas_white_undefined.jpeg" width="20%">
+        <img src="./media/canvas_black_pink.jpeg" width="20%">
+        <img src="./media/suede_white_red.jpeg" width="20%">
+    </div>
+
+    <!-- section about -->
+    <section id="about" class="mt-30">
+
+        <div class="mx-auto w-2/3">
+            <p class="font-normal text-gray-800">
+                <span class="text-indigo-500"><b>SwooshSwitcher</b></span> is a simple MVC object-oriented web
+                application
+                that allows customizing and viewing your Nike Air Force 1's filtered by material, sneakers and swoosh
+                color. The application provides a user-friendly interface that allows you to mix and match various
+                design elements to create your own swoosh. Once customized, you may proceed with submitting the
+                customization that prompts the user to a form page with the info details provided from the user input.
+                The user can then enter the additional input information provided in the form to submit and finish the
+                order. The order form includes input validation for every element field, with warning (or success)
+                message for every field.
+            </p>
+            <p class="mt-5 font-normal text-gray-800">
+                <span class="text-indigo-500"><b>"Swoosh"</b></span> is the logo of Nike created in 1971, currently one
+                of the most recognizable brand logos
+                in the world, and the most valuable. The logo itself has undergone minor changes since its original
+                design and over the years, the orange and white palette have traditionally been used on the logo. The
+                Swoosh also appears alongside the trademark <b>"Just do it"</b> since 1988 - these two make the core of
+                the Nike brand, and has been the face of the company, with many high-profile athletes and sports teams
+                around the world sporting the logos.
+            </p>
+            <p class="mt-5 font-normal text-gray-800">
+                To begin customizing your Nike Air Force 1's, simply choose the material,
+                and proceed with selecting your preferred color for the base, laces, and swoosh.
+            </p>
+            <p class="mt-5 font-normal text-gray-800">
+                Once customized, you may proceed with submitting the customization
+                that prompts the user to a form page with the info details provided from the user input. The user can
+                then enter the additional input information provided in the form to submit and finish the order. The
+                order form includes input validation for every element field, with warning (or success) message for
+                every field.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- section form -->
+    <section id="form">
+        <!-- form customize sneakers -->
+        <form id="form-sneakers" action="form.html" class="mt-20 mb-20">
+            <!-- div for sneakers image -->
+            <div id="div-sneakers" class="container-item">
+                <img class="image mx-auto" src="./media/undefined-undefined.png" alt="empty image">
+            </div>
+            <div class="container mx-auto">
+                <!-- div for sneakers selects -->
+                <div id="div-selects" class="container-item">
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <input type="submit"
+                    class="text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                    value="Confirm customization">
+            </div>
+        </form>
+    </section>
+
+    <!-- icons script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+</body>
+
+</html>

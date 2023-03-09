@@ -1,0 +1,122 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+    /* select off */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* header */
+.header {
+    background-color: whitesmoke;
+}
+
+/* about */
+.about {
+    text-align: center;
+}
+
+/* form */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* card */
+.card {
+    border-radius: 16px;
+    border: none;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-img-top {
+    border-radius: 16px;
+}
+
+/* image */
+.image {
+    border-radius: 16px;
+    /* border: 1px solid #aaa; */
+    -webkit-box-shadow: 0 0 3px #aaa;
+    box-shadow: 0 0 3px #aaa;
+    width: 30%;
+}
+
+/* form sneakers id */
+#form-sneakers {
+    background-color: #fff;
+}
+
+/* containers */
+/* create two equal columns that sits next to each other */
+.container-item {
+    margin-top: 32px;
+    /* border-color: #f76902;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px; */
+    text-align: center;
+}
+
+.container select {
+    width: 20%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+}
+
+/* fieldset */
+.fieldset {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* inputs */
+input[type="text"] {
+    margin-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+input[type=submit]:hover {
+    -webkit-box-shadow: 0 0 3px #333;
+    box-shadow: 0 0 3px #333;
+}
+
+/* media query - 600px */
+@media only screen and (max-width: 600px) {
+
+    .image {
+    border-radius: 16px;
+    /* border: 1px solid #aaa; */
+    -webkit-box-shadow: 0 0 3px #aaa;
+    box-shadow: 0 0 3px #aaa;
+    width: 70%;
+    }
+
+    .container select {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .custom-select {
+        display: block;
+    }
+
+}
